@@ -1,12 +1,45 @@
-# CONVERSOR DE MOEDAS
-Trata-se do Challenge Conversor de Moedas, que é um dos desafios da etapa Tech Foundation da Turma G8 do Programa Oracle Next Education (ONE), para consolidar os conceitos de programação em Java e orientação à objetos. 
-Consiste numa aplicação que realiza a conversão de um valor informado pelo usuário entre duas moedas selecionadas em um menu de opções. A taxa de conversão entre as moedas selecionadas é fornecida dinamicamente pela ExchangeRate API. 
 
+
+# 💱 CONVERSOR DE MOEDAS
+
+## 📝 Descrição
+Este é um conversor de moedas desenvolvido em **Java** com o auxílio do **Maven** para gerenciamento de dependências e build.  
+A aplicação permite ao usuário converter valores entre diferentes moedas, utilizando taxas de câmbio atualizadas fornecidas pela **[ExchangeRate-API](https://exchangerate-api.com)**.
+
+O projeto foi criado como parte do desafio do programa **Oracle Next Education (ONE)** em parceria com a **Alura**, com o objetivo de aplicar e consolidar conhecimentos em **Java** e **orientação a objetos**.
+
+---
+
+## ✨ Funcionalidades
+- **Conversão de Moedas**: Suporte para Dólar Americano (USD), Real Brasileiro (BRL), Euro (EUR), entre outras.
+- **Menu Interativo**: Interface de linha de comando (CLI) que guia o usuário na escolha das moedas e valores.
+- **Taxas de Câmbio em Tempo Real**: Integração com a *ExchangeRate-API* para obter dados de câmbio atualizados.
+- **Gerenciamento com Maven**: Utiliza o `pom.xml` para gerenciar dependências e facilitar o build do projeto.
 
 ![Conversor_de_moedas](https://github.com/user-attachments/assets/32e4dd8b-320c-446e-b589-8a3631d9504b)
 
+---
 
-## Tecnologias utilizadas
-* Java JDK 21: https://www.oracle.com/java/technologies/downloads/#java21
-* Biblioteca Gson: https://github.com/google/gson
-* ExchangeRate API: https://www.exchangerate-api.com/docs/overview
+## 🚀 Tecnologias Utilizadas
+- **Java 21**: Linguagem principal do projeto.
+- **Maven**: Ferramenta para automação de build e gerenciamento de dependências.
+- **Gson**: Biblioteca do Google para manipulação de JSON.
+- **ExchangeRate-API**: API externa para cotações de moedas.
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+> É necessário ter o **Java (JDK 21 ou superior)** e o **Apache Maven** instalados.
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/lucastnsoares/conversor_de_moedas.git
+   
+2. **Acesse a pasta do projeto**:
+    ```bash
+   conversor_de_moedas
+   
+3. **Compile e execute com o Maven**
+    ```bash
+    mvn compile exec:java -Dexec.mainClass="ExchangeRateApi"
