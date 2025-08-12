@@ -30,6 +30,25 @@ O projeto foi criado como parte do desafio do programa **Oracle Next Education (
 
 ## ⚙️ Como Executar o Projeto
 
+### Obter a chave da API
+
+1. Acesse [ExchangeRate-Api.com](https://www.exchangerate-api.com).
+2. Cadastre-se e copie sua chave de API (ex.: `123456abcdef`).
+
+### Configure a variável de ambiente `API_KEY`
+#### No Windows (PowerShell)
+
+```powershell
+$Env:API_KEY = "SUA_API_KEY_AQUI"
+```
+
+#### No Linux/macOS (bash/zsh)
+
+```bash
+export API_KEY="SUA_API_KEY_AQUI"
+```
+
+### Passos para execução
 > É necessário ter o **Java (JDK 21 ou superior)** e o **Apache Maven** instalados.
 
 1. **Clone o repositório**:
@@ -42,4 +61,4 @@ O projeto foi criado como parte do desafio do programa **Oracle Next Education (
    
 3. **Compile e execute com o Maven**
     ```bash
-    mvn compile exec:java -Dexec.mainClass="ExchangeRateApi"
+    mvn compile exec:java -Dexec.mainClass="ConversorDeMoedas"
